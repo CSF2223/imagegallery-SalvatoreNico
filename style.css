@@ -59,11 +59,33 @@ p{
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.4),0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+.imageCard a {
+    text-decoration: none;
+    color: #826F66;
+}
+
 .cardText {
     color:#C69B7B;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 30px;
     margin-top: 2rem;
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.4),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media(min-width: 768px)  {
+    header {
+        font-size: 1.6rem;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .imageCard{
+        max-width: 28%;
+    }
 }
